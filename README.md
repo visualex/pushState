@@ -1,12 +1,11 @@
-/*
- * 
- * jQuery pushState plugin
- * 
+
+  <h1>jQuery pushState plugin</h1>
+  
  
  
     
-    This plugin uses the new method avalible in most modern browsers to push history
-    and browse using AJAX without having to use #hashtags in your urls.
+    <h2>This plugin uses the new method avalible in most modern browsers to push history
+    and browse using AJAX without having to use #hashtags in your urls.</h2>
 
     Usage
     1) $('a').pushState(); //wll load via ajax into the body, will omit reloading the resopurces like css, javascript
