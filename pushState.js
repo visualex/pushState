@@ -1,10 +1,9 @@
 /*
  * 
- * jQuery pushState plugin
- * 
- * The MIT License
- * Copyright (c) 2013 Aleksandr Bogdanov
+    jQuery pushState plugin
     
+    Copyright © 2007 Free Software Foundation, Inc. <http://fsf.org/>
+
     This plugin uses the new method avalible in most modern browsers to push history
     and browse using AJAX without having to use #hashtags in your urls.
 
@@ -49,8 +48,6 @@
         //main
         $('body').on(settings.event, this.selector, function(event){
 
-                console.log(event); 
-
                 target = event.target;
 
                 url = $(target).attr('href');
@@ -75,7 +72,6 @@
                     window.history.pushState(response, link_title, url);
                     //more funky animations 4u
                     settings.callback.call();
-
                 });
                 //prevent default document.location change
                 event.preventDefault();
