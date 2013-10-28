@@ -47,8 +47,9 @@
 
         //main
         $('body').on(settings.event, this.selector, function(event){
-
-                target = event.target;
+                
+                //the link
+                target = this;
 
                 url = $(target).attr('href');
 
