@@ -22,7 +22,8 @@
          event            :   'click',
          callbefore       :    function(){},
          callback         :    function(){},
-         use_title        :    true, 
+         use_title        :    true,
+         error_message    :    'Error, esta dirección no es válida.',
          use              :    true 
 
      }, options);
@@ -61,6 +62,10 @@
                 settings.callbefore.call();
 
                 $(settings.container).load(url, function(response, status, xhr) {
+                    if(status=='error'){
+                        $(settings.container).html(settings.error_message);
+                    }
+
                     link_title = '';
                     //we have to do this cause it currently gets ignored in all browsers. 
                     //One day it will be implemented
@@ -85,3 +90,6 @@
 };
 
 })( jQuery );
+
+
+
