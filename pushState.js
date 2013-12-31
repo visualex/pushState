@@ -1,4 +1,3 @@
-
 /*
     jQuery pushState plugin
     
@@ -47,7 +46,7 @@
         window.history.pushState( $(settings.container).html(), document.title, document.location.href );
 
         //main
-        $('body').on(settings.event, this.selector, function(event){
+        $(document).on(settings.event, this.selector, function(event){
 
                 target = this;
 
